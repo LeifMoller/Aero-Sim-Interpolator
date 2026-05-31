@@ -1,4 +1,4 @@
-# Aero-Sim-3D-Plotting-Inerpolator
+# Aero-Sim-Interpolator
 
 Aero sims run with Star CCM give output of drag coefficient (Cd) and lift coefficient (Cl) values. 
 
