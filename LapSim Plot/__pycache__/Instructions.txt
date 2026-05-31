@@ -1,0 +1,52 @@
+Author: Leif Moller
+Date: May 30, 2026
+Email: leif.moller12@gmail.com
+
+Note: All extra resources (Excel spreadsheet, LapSim process) found in FE Drive at
+    Aero -> First Year Sub Tasks -> Lap Sims
+
+
+
+*** INSTALATIONS ***
+
+Paste following command into terminal / command window:
+
+    pip install numpy matplotlib pandas scipy
+
+
+
+*** PURPOSE ***
+
+Simulations run with Star CCM give output of drag coefficient (Cd) and lift coefficient (Cl) values
+for aerodynamic configurations.
+
+This code is used both to visualize trends of performance for differenct Cd and Cl values
+in different race categories, and to predict point return values for specific Cd and Cl values.
+
+These interpolated return values will guide aero kit design, as the aero team aims to maximize points in competition.
+
+The lap times for Cd and Cl values were obtained iteravily using OptimumLap. More info on process in FE Drive
+An Excel spreadsheet was then used to calculate predicted points in each category based on the 2026 FSAE rules for points
+
+       Found at: https://www.fsaeonline.com/cdsweb/gen/DownloadDocument.aspx?DocumentID=278fd4d7-aa27-4e33-bc4a-090148e662a0
+
+
+
+
+*** USING THE PROGRAM ***
+
+Run CSV_Scraper first, then 3D Graph.
+
+Prompts should guide decisions. 
+Simply input Cd and Cl values when prompted (after selecting single graph).
+Terminal will output exact interpolated point, while graph can be used for visualization.
+
+
+
+
+*** ADJUSTMENTS ***
+
+If rules change, equations in excel should be adjusted. The excel spreadsheet also uses max and minumum times from 2025
+for point calculations. These should also be updated eventually. More info in spreadsheet found in FE Drive.
+
+After making adjustments to excel spreadsheet, download and use the new lapTimeData. Code should still work as designed.
